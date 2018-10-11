@@ -1,0 +1,517 @@
+body{
+	background: white;
+}
+section{
+	margin: 0 auto;
+	width: 997px;
+	height: auto;
+}
+.shopnamebox{
+	border-bottom: 1px solid #F2F2F2;
+}
+.my{
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-left: 14px;
+	background: url(../images/header_sprite.png) no-repeat 0px 0px;
+}
+.shopcon{
+	height: 52px;
+}
+.satgrade{
+	height: 243px;
+	top: 46px;
+}
+.huaadbox{
+	width: 100%;
+    height: 119px;
+    position: relative;
+    overflow: hidden;
+}
+.huaadbox img{
+	position: absolute;
+    left: -279px;
+}
+/*.barr ul li{
+	    width: 71px;
+}*/
+.bar{
+	width: 997px;
+}
+.barl{
+	margin-left: 42px;
+	border-right: 1px solid #a90000;
+}
+.barr{
+	right: 38px;
+}
+.barr ul li:nth-child(1){
+	width: 32px;
+}
+.barr ul li:nth-child(2),
+.barr ul li:nth-child(2),
+.barr ul li:nth-child(4),
+.barr ul li:nth-child(5)
+{
+	width: 59px;
+}
+.barr ul li:nth-child(3),
+.barr ul li:nth-child(6),
+.barr ul li:nth-child(7){
+	width: 100px;
+}
+.bar li:hover{
+	background-color:#a90000;
+} 
+.barlist{
+	width: 190px;
+    left: -42px;
+    height: 41px;
+    border-top:1px solid #a90000;
+    /*display: block;*/
+}
+.barlist ul{
+	width: 190px;
+}
+.barlist .barlistul li {
+	    width: 169px;
+	    padding-left: 43px;
+	    border-top: none;
+}
+.barlist .barlistul li .barl1{
+	    left: 190px;
+	    /*width: 149px;*/
+	    background: #a90000;
+	    height: 127px;
+}
+.barlist .barlistul li .barl1 li{
+	width: 120px;
+}
+.pricebox{
+	height: 45px;
+    width: auto;
+    padding-left: 40px;
+    font-size: 12px;
+    padding-top: 15px;
+    /*border: 1px solid #000;*/
+    background: #F5F5F5;
+}
+.pricebox input:nth-child(1){
+	    width: 204px;
+    margin-right: 57px;
+    outline: none;
+}
+.pricebox input:nth-child(2){
+	    width: 50px;
+    outline: none;
+}
+.pricebox input:nth-child(3){
+	    width: 50px;
+    outline: none;
+}
+.pricebox button{
+	background: #ff8800;
+    outline: none;
+    border: 1px solid #f60;
+    color: white;
+    border-radius: 7px;
+    font-size: 12px;
+}
+.huaroll{
+	width:989px;
+    height: 500px;
+    overflow:hidden;
+	position: relative;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.huaroll ul{
+	width:9999px;
+    position: relative;
+    left:0px;
+}
+.huaroll ul li{
+	float:left;
+}
+.huaroll ol{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -70px;
+}
+.huaroll ol  li{
+   width: 10px;
+    height: 10px;
+    border: 2px solid white;
+    opacity: .9;
+    border-radius: 50%;
+    float: left;
+    margin-right: 13px;
+}
+.huaroll ol .huacurrent{
+   background: #ff0000;
+}
+.huaroll span{
+	 display: none;
+     height: 64px;
+     width: 30px;
+     position:absolute;       		
+     cursor:pointer;
+ }
+.huaroll .hualeft{
+	/*display: none;*/
+	left:10px;
+    top: 233px;
+    background: url(../images/index.png) no-repeat -162px -146px;
+}
+.huaroll .huaright{
+	/*display: none;*/
+	right:18px;
+    top: 233px;
+    background: url(../images/index.png) no-repeat -197px -146px;
+}
+
+/*.huaroll */
+
+.huaphone{
+	width: auto;
+	    height: 595px;
+	/*border: 1px solid #000;*/
+	margin-bottom: 10px;
+}
+
+
+
+.huaphone1{
+	width: 192px;
+	    height: 581px;
+	float: left;
+	/*border: 1px solid #000;*/
+	/*margin-bottom: 10px;*/
+}
+.huaphone1box1{
+	width: 192px;
+	height: 257px;
+	border: 1px solid #DDDDDD;
+	font-size: 12px;
+	float: left;
+	/*padding-left: 11px;*/
+}
+.huaphone1box1 p:nth-child(1),
+.huaphone1box2 p:nth-child(1){
+	background: #363636;
+    color: white;
+    height: 28px;
+    line-height: 22px;
+    padding-left: 11px;
+    font-weight: bold;
+}
+.huaphone1box1 span,.huaphone1box2 span {
+	    color: #666;
+    /* padding-left: 10px; */
+    width: 192px;
+    height: 12px;
+    display: inline-block;
+    float: left;
+    padding: 4px 0px 9px 0px;
+    /* margin-bottom: 5px; */
+    margin-left: 8px;
+}
+.huaphone1box1 p:nth-child(3),
+/*.huaphone1box2 p:nth-child(3)*/{
+	    padding-left: 9px;
+    float: left;
+}
+.huaphone1box1 p:nth-child(4){
+	padding-left: 11px;
+	float: left;
+}
+.huaphone1box1 p:nth-child(5){
+	padding-left: 11px;
+	float: left;
+}
+.tab1{
+	width:192px;
+	height: 60px;
+	float: left;
+}
+.tab1 span{
+	    margin-top: 8px;
+    height: 14px;
+    width: 191px;
+    background: #f8f8f8;
+    margin-left: 0px;
+    display: block;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.huaup{
+	display: inline-block;
+	height:11px;
+	width:11px;
+	margin-left: 9px;
+    margin-right: 10px;
+	background: url(../images/markIco.png) no-repeat -89px -20px;
+}
+.huadown{
+	display: inline-block;
+	height:11px;
+	width:11px;
+	margin-left: 9px;
+    margin-right: 10px;
+	background: url(../images/markIco.png) no-repeat -89px -32px;
+}
+.tab1 ul{
+	width:192px;
+	height: 28px;
+	/*border: 1px solid #000;*/
+	float: left;
+	/*margin-top: 3px;*/
+}
+.tab1 ul li{
+	    font-size: 12px;
+    float: left;
+    margin-left: 7px;
+    padding-top: 3px;
+}
+
+.tab2{
+	width:192px;
+	height: 126px;
+	float: left;
+}
+.tab2 span{
+	    margin-top: 8px;
+    height: 14px;
+    width: 191px;
+    background: #f8f8f8;
+    margin-left: 0px;
+    display: block;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.tab2 ul{
+	width:192px;
+	height: 98px;
+	/*border: 1px solid #000;*/
+	float: left;
+	/*margin-top: 3px;*/
+}
+.tab2 ul li{
+	    font-size: 12px;
+    /* float: left; */
+    padding-top: 4px;
+    margin-left: 7px;
+    padding-bottom: 6px;
+}
+.huaphone1box2{
+	margin-top: 10px;
+	border: 1px solid #DDDDDD;
+	width: 192px;
+	height: 309px;
+	float: left;
+	font-size: 12px;
+}
+.huaphone1box2 p{
+	padding-left: 11px;
+}
+.huaphone1box2  .p1{
+	    width: 173px;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #F2F2F2;
+}
+
+.huaphone1box2 .value1{
+	width: 192px;
+	    height: 100px;
+	border-bottom: 1px dashed #F2F2F2;
+}
+/*.huaphone1box2 .value1 span{
+	    width: 87px;
+}*/
+.huaphone1box2 .value1 span.vl11 {
+	width: 87px;
+    float: left;
+}
+.huaphone1box2 .value1 span.vl12{
+	width: 87px;
+    float: right;
+}
+.huaphone1box2 .value1 span.satp11{
+	    margin-left: -2px;
+    width: 80px;
+}	
+.huaphone1box2 .value1 span.satp12{
+	    width: 58px;
+    display: inline-block;
+    padding-left: 5px;
+    color: red;
+}
+.value1 span.satp12 i{
+	background: url(../images/scoreIco.png) no-repeat 0px 0px;
+	height:12px;
+	width: 12px;
+	display: inline-block;
+	/*color: #FF6600;*/
+	vertical-align: bottom;
+}
+.huaphone1box2 .shopcon1{
+	    height: 90px;
+    width: 192px;
+    margin-top: 6px;
+    padding-left: 10px;
+}
+.huaphone1box2 .shopcon1 li{
+	    margin-bottom: 3px;
+}
+.huaphone1box2 .shopcon1 li:nth-child(1),
+.huaphone1box2 .shopcon1 li:nth-child(2){
+	font-weight: bold;
+	color: #666666;
+}
+.huaphone1box2 .shopcon1 li:nth-child(3),
+.huaphone1box2 .shopcon1 li:nth-child(4){
+	/*font-weight: bold;*/
+	color: #999;
+}
+.huaphone1box2  .shopac1{
+	    width: 192px;
+    height: 40px;
+    margin-left: 12px;
+}
+.huaphone1box2  .shopac1 li{
+	    height: 21px;
+    width: 74px;
+    float: left;
+    text-align: center;
+    line-height: 21px;
+    margin-right: 10px;
+    border: 1px solid #F2F2F2;
+    border-radius: 5%;
+}
+.huaphone1box2  .shopac1 li:nth-child(2){
+	border: 1px solid #ff8b00;
+	background: #ff8b00;
+	color: white;
+}
+.huaphone2{
+	height: 589px;
+	width:789px;
+	float: right;
+	/*border: 1px solid #000;*/
+}
+.huaphone2box1{
+	    width: 789px;
+    height: 291px;
+    /*border: 1px solid #000;*/
+    margin-bottom: 2px;
+}
+.huaphone2box1 p{
+	padding-top: 4px;
+	    width: 783px;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 7px;
+    background: #363636;
+    color: white;
+}
+.huaphone2box1 ul{
+	height:267px;
+	width: 789px;
+	/*border: 1px solid red;*/
+}
+.huaphone2box1 ul li{
+	height: 262px;
+    width: 190px;
+    float: left;
+    /*border: 1px solid lime;*/
+    margin-right: 5px;
+}
+.huaphone2box1 ul li a img{
+	width: 167px;
+    height: 167px;
+    margin-left: 11px;
+    margin-top: 6px;
+    border: 1px solid #f2f2f2;
+}
+
+.huaphone2box1 ul li a span{
+	    width: 60px;
+    display: inline-block;
+    margin-top: 3px;
+    color: #FF6600;
+    margin-left: 10px;
+    font-size: 18px;
+    height: 30px;
+}
+.huaphone2box1 ul li a span i{
+	font-size: 12px;
+	font-style: normal;
+}
+.huaphone2box1 ul li a p.phonep{
+	    background: none;
+    color: black;
+       width: 180px;
+    /* margin-top: 0px; */
+    height: 30px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    font-size: 12px;
+    /* font-style: normal; */
+    font-weight: normal;
+}
+.bestsale{
+	position: relative;
+	width: 997px;
+	height:905px;
+	/*border: 1px solid #000;*/
+	margin-bottom: 10px;
+	position: relative;
+}
+.bestsale p{
+	     width: 983px;
+      height: 26px;
+    padding-top: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 7px;
+    background: #363636;
+    color: white;
+}
+.bestsalea{
+	    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 997px;
+    height: 905px;
+    /*border: 1px solid #000;*/
+}
+.bestsalea ul{
+	    margin-top: 207px;
+    width: 957px;
+    margin-left: 13px;
+    height: 649px;
+    /*border: 1px solid red;*/
+
+}
+.bestsalea ul li{
+	    width: 213px;
+    height: 304px;
+    float: left;
+    margin-top: 13px;
+    margin-left: 14px;
+    margin-right: 9px;
+    /*border: 1px solid #000;*/
+}
+.bestsalea ul li a{
+	display: block;
+	width: 100%;
+    height:100%;
+}
+.textbox {
+	    font-size: 12px;
+}

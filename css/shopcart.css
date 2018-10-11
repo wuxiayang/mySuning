@@ -1,0 +1,418 @@
+html{
+	background: white;
+}
+.shopname{
+	width: 1064px;;
+}
+.shopname .logobox{
+	border-right: none;
+}
+.cartbarbox{
+	width: 100%;
+	height:89px;
+	
+}
+.cartbar{
+	width: 990px;
+	height:89px;
+	margin: 0 auto;
+	/*border: 1px solid #000;*/
+}
+.cartaddress{
+	width: 990px;
+	height:43px;
+	margin: 0 auto;
+	/*border: 1px solid #000;*/
+}
+section{
+	width: 990px;
+	height: auto;
+	margin: 0 auto;
+}
+.cartheader{
+	    font-size: 12px;
+    color: #666;
+    /*padding-top: 9px;*/
+	/*border: 1px solid #000;*/
+	width: 990px;
+	height: 37px;
+	border: 1px solid #dddddd;
+	border-top: 2px solid #dddddd;
+	/*margin: 0 auto;*/
+}
+.cartheader div{
+	height: 28px;
+	float: left;
+	text-align: center;
+	    padding-top: 9px;
+}
+.cartheader div:nth-child(1),
+.cartgoodlist li:nth-child(1){
+	width: 70px;
+}
+.cartheader div:nth-child(2),
+.cartgoodlist li:nth-child(2){
+	width: 301px;
+}
+.cartheader div:nth-child(3),
+.cartgoodlist li:nth-child(3){
+	width: 159px;
+}
+.cartheader div:nth-child(4),
+.cartgoodlist li:nth-child(4){
+	width:91px;
+}
+.cartheader div:nth-child(5),
+.cartgoodlist li:nth-child(5){
+	width:110px;
+}
+.cartheader div:nth-child(6),
+.cartgoodlist li:nth-child(6){
+	width: 144px;
+}
+.cartheader div:nth-child(7),
+.cartgoodlist li:nth-child(7){
+	width: 101px;
+}
+.cartbodyy{
+	height: auto;
+	width:990px;
+}
+.cartgoodboxx{
+	width:990px;
+    height:auto;
+	/*border: 1px solid #000;*/
+}
+.cartshopname{
+	    width: 990px;
+    line-height: 30px;
+    height: 35px;
+    /*border: 1px solid;*/
+}
+ .cartshopname span{
+	display: inline-block;
+	font-size: 12px;
+    /*border: 1px solid;*/ 
+    padding-top: 2px;
+    color: black;
+    font-weight: bold;
+}
+ .cartshopname input{
+	float: left;
+	    margin-top: 10px;
+    margin-right: 9px;
+}
+.cartshopname span:nth-child(3){
+	float: left;
+    /*text-align: center;*/ 
+}
+.cartshopname i:nth-child(2) {
+	    display: inline-block;
+	    float: left;
+	    margin-top: 8px;
+    background: url(../images/lion-cart.png) no-repeat 0px 0px;
+    height: 18px;
+    width: 20px;
+    vertical-align: sub;
+}
+.cartshopname span.yun{
+	float:right;
+}
+/*商品列表部分*/
+.cartgoodlist{
+	width:990px;
+	border:1px solid #DDDDDD;
+	    height: 112px;
+	    font-size: 12px;
+	    background: #fffcf3;
+}
+
+.cartgoodlist li{
+	float: left;
+    height: 110px;
+	/*border: 1px solid yellow;*/
+}
+.cartgoodlist .cartonly{
+	    text-align: center;
+	        height: 99px;
+	    padding-top: 11px;
+}
+.cartgoodlist .goods{
+	
+}
+.cartgoodlist .goods img.smallimg{
+    height: 80px;
+    margin-top: 14px;
+    float: left;
+    width: 80px;
+    position: relative;
+    display: block;
+    border: 1px solid #DDDDDD;
+}
+.cartgoodlist .goods .goodsimg{
+	display: none;
+    position: relative;
+    z-index: 10;
+    height: 270px;
+    left: 95px;
+    top: 14px;
+    width: 271px;
+    border: 1px solid #f60;
+}
+/*.cartgoodlist .goods .goodsimg .top:after{
+	border-top-color: #f60;
+}*/
+.cartgoodlist .goods .goodsimg .leftimg{
+	    display: block;
+    position: relative;
+    float: left;
+    top: -36px;
+    left: -264px;
+    z-index: 11;
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #f60;
+    border-top: 12px solid transparent;
+    position: relative;
+    margin: 50px auto;
+}
+.cartgoodlist .goods .goodsimg .leftimg span{
+    
+    /*效果*/
+    /*display: block;*/
+        /* display: block; */
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #ffff;
+    border-top: 10px solid transparent;
+    position: absolute;
+    left: 2px;
+    top: -10px;
+}
+/*.cartgoodlist .goods .goodsimg span:after{
+	content: "";
+	
+}*/
+.cartgoodlist .goods .goodsimg img{
+	height: 270px;
+    width: 270px;
+    display: inline-block;
+    float: right;
+    right: 0;
+    position: absolute;
+}
+
+.cartgoodlist .goods p{ 
+	width: 158px;
+    float: left;
+    margin-top: 13px;
+    overflow: hidden;
+    margin-left: 14px;
+    height: 35px;
+    /*font-size: 12px;*/
+    /*border: 1px solid #000;*/
+}
+.cartgoodlist .goodsize{
+	color: #666;
+	height: 97px;
+	padding-top: 13px;
+    text-align: center;
+}
+.cartgoodlist .goodonlyprice,.cartgoodlist .goodsallprice,.cartgoodlist .goodsdel{
+    text-align: center;
+}
+.cartgoodlist .goodonlyprice i,.cartgoodlist .goodsallprice i{
+	    font-style: normal;
+    display: inline-block;
+    margin-top: 13px;
+}
+.cartgoodlist .goodscount{
+	    padding-top: 13px;
+	        height: 98px;
+}
+.goodscount .add, .goodscount input, .goodscount .reduce {
+    float: left;
+    margin-right: -1px;
+    position: relative;
+    z-index: 0;
+}
+.goodscount .add, .goodscount .reduce {
+    height: 23px;
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 23px;
+    color: #444;
+}
+.goodscount .reduce{
+	margin-left: 13px;
+}
+    
+.goodscount .add:hover, .goodscount .reduce:hover {
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+.goodscount input {
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.cartgoodlist .goodsdel a{
+    margin-top: 13px;
+    display: block;
+}
+.buyall{
+	height: 58px;
+	width: 997px;
+	border: 1px solid #ddd;
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.buyall .selectall{
+    width: 69px;
+    height: 38px;
+    padding-top: 19px;
+    float: left;
+    padding-left: 11px;
+    /*border: 1px solid;*/
+}
+.buyall .delall{
+    float: left;
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 30px;
+    /*border: 1px solid;*/
+    height: 37px;
+    color: #666;
+}
+
+.buyall  .totalprice{
+    float: right;
+    padding-top: 17px;
+    height: 40px;
+    width: 179px;
+    padding-left: 21px;
+    border-left: 1px solid #f2f2f2;
+}
+.buyall  .totalprice p{
+	    float: left;
+}
+.buyall  .totalprice i{
+	font-style: normal;
+    color: #ff631e;
+}
+.buyall  .totalprice span{
+	color: #ff631e;
+    font-size: 23px;
+    width: 109px;
+    height: 23px;
+    display: inline-block;
+    /*border: 1px solid;*/
+    line-height: 16px;
+}
+.buyall button{
+    float: right;
+    height: 58px;
+    width: 100px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background: #ff5a00;
+    /* border: 1px solid #000; */
+}
+.buyall .selectshow{
+    float: right;
+    position: relative;
+    width: 132px;
+    padding-top: 10px;
+    padding-left: 33px;
+    height: 46px;
+    /*border: 1px solid #000;*/
+}
+
+.buyall .selectshow p{
+	float: left;
+}
+.buyall .selectshow .down{
+	    vertical-align: bottom;
+	        margin-left: 9px;
+}
+.buyall .selectshow   .selnum{
+    color: #F60;
+    FONT-SIZE: BOLD;
+    font-size: 19px;
+    vertical-align: baseline;
+    margin-left: 4px;
+    margin-right: 4px;	
+}
+.selectshow .showsel{
+	display: none;
+    position: absolute;
+    height: 109px;
+    /*width: auto;*/
+   width: 412px;
+    z-index: 100;
+    /* position: relative; */
+    border: 1px solid #ff631e;
+    top: -110px;
+    left:-255px;
+    background: white;
+}
+.selectshow .showsel .upshow{
+    width: 0;
+    z-index: 10;
+    height: 0;
+    top: 108px;
+    left: 341px;
+    float: left;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #f60;
+    position: relative;
+    /* margin: 50px auto; */
+}
+.selectshow .showsel .upshow .downshow{
+	    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    position: absolute;
+    left: -10px;
+    top: -12px;
+}
+.showsel .upimg{
+	    width: auto;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+.selectshow .showsel img{
+    height: 80px;
+    /*e: 80px;*/
+    float: left;
+    border: 1px solid #f2f2f2;
+     margin: 0px 10px 7px 12px;
+}
+/*.selectshow .showsel .goodsshow{
+	
+}*/
+/*.selectshow .showsel
+.selectshow .showsel*/
+footer{
+	height: 208px;
+}

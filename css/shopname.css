@@ -1,0 +1,361 @@
+.shopnamebox{
+	width: 100%;
+	height: 93px;
+	margin-bottom: 12px;
+	/*border: 1px solid red;*/
+}
+.shopname{
+	margin: 0 auto;
+	width: 1190px;
+	height: 93px;
+	/*border: 1px solid #000;*/
+}
+.shopname .logobox{
+	height: 77px;
+	width: 216px;
+	margin-top: 9px;
+	border-right: 1px solid #969896;
+	float: left;
+}
+.shopname .logobox img{
+        height: 87px;
+    width: 182px;
+    margin-top: -13px;
+}
+.shopdetail{
+	/*display: none;*/
+	width:235px;
+	height: 77px;
+	margin-top: 9px;
+	/*border: 1px solid #000;*/
+	float: left;
+	margin-left: 18px;
+	
+}
+.shopdetail p{
+	    font-size: 13px;
+    color: #666666;
+    width: 225px;
+    height: 20px;
+    font-weight: bold;
+     padding-left: 18px;
+}
+.shopscore{
+	z-index: 100;
+	    top: 19px;
+    height:39px;
+    width: 235px;
+    position: relative;
+}
+.shopscore span{
+	    padding-left: 18px;
+}
+.shopscore span,em{
+	    font-size: 12px;
+}
+
+.shopscore img{
+	    height: 20px;
+    width: 72px;
+    vertical-align: bottom;
+    margin-left: 16px;
+}
+.showup{
+	background: url(../images/header_sprite.png) no-repeat -65px -360px;
+	display: inline-block;
+	height: 4px;
+	width: 9px;
+    margin-left: 14px;
+}
+.showdown{
+	background: url(../images/header_sprite.png) no-repeat -64px -383px;
+	display: inline-block;
+	height: 4px;
+	width: 9px;
+    margin-left: 14px;
+}
+.satgrade{
+	display: none;
+	background: white;
+	height: 287px;
+    width: 366px;
+    /*border: 1px solid #000;*/
+    position: absolute;
+    top: 57px;
+    z-index: 6;
+    left: -20px;
+    border:1px solid #969896;
+}
+.value{
+	margin-top: 27px;
+    width: 346px;
+    height: 110px;
+    margin-left: 12px;
+    border-bottom: 1px dashed #F2F2F2;
+    float: left;
+}
+.value span.vl1{
+	margin-left: -17px;
+    float: left;
+    margin-bottom: 10px;
+}
+.value span.vl2{
+	margin-right: 119px;
+	float: right;
+	margin-bottom: 10px;
+}
+.value p{
+	margin-top: 7px;
+	float: left;
+}
+.value span.satp1{
+	    margin-left: -38px;
+}
+.value span.satp2{
+	      /*margin-left: 30px;*/
+    /* border: 1px solid; */
+    width: 159px;
+    padding-left: 42px;
+}
+.value span.satp2 i{
+	background: url(../images/icon_perup.png) no-repeat 0 center;
+	height: 15px;
+	width: 40px;
+	display: inline-block;
+	color: #FF6600;
+	vertical-align: bottom;
+}
+.value img{
+	    height: 72px;
+    width: 72px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 8px;
+    border: 1px solid #f2f2f2;
+}
+
+.shopcon{
+	float: left;
+	height:99px;
+	width: 346px;
+	border-bottom: 1px dashed #F2F2F2;
+	line-height: 22px;
+}
+.shopcon li{
+    float: left;
+    /*font-size: 12px;*/
+    /*margin-top: 10px;*/
+    /*height: 107px;*/
+    width: 346px;
+    height: 15px;
+    margin-left: 11px;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.commit{
+	background: url(../images/header_sprite.png) no-repeat 0px -97px;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	vertical-align: sub;
+}
+.police1{
+	background: url(../images/header_sprite.png) no-repeat 0px -211px;
+	display: inline-block;
+	height: 18px;
+    width: 18px;
+}
+.shopac{
+	float: left;
+    height: 60px;
+    width: 346px;
+    margin-left: 12px;
+    font-size: 12px;
+    margin-top: 12px;
+}
+.shopac li{
+	height: 19px;
+    width: 82px;
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 17px;
+    border: 1px solid #666666;
+    color: #666666;
+    padding: 3px;
+}
+.shopac li:nth-child(1){
+	color: #f60;
+	border: 1px solid #f60;
+}
+.searchbox{
+	width: 547px;
+	height: 77px;
+	/*border: 1px solid #000;*/
+	margin-top: 9px;
+	float: right;
+}
+
+.searchbar{
+	width: 379px;
+	height:38px;
+	border: 2px solid #ffb830;
+	position: relative;
+	margin-top: 6px;
+}
+.searchbar input{
+	height: 36px;
+	width: 369px;
+	outline: none;
+	border: none;
+	/*border: 1px solid red;*/
+	position: absolute;
+	left: 10px;
+}
+.searchbar button{
+	height: 42px;
+    width: 80px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    line-height: 16px;
+    border: none;
+    top: -2px;
+}
+.searchbar button:nth-child(2){
+    background: #ffb830;
+    right: -82px;
+}
+
+.searchbar button:nth-child(3){
+	background: #454545;
+    right: -166px;
+}
+
+
+.headbarbox{
+	width: 100%;
+	height: 44px;
+    /*margin-bottom: 2px;*/
+    background: #000000;
+}
+
+.bar{
+	margin: 0 auto;
+	height: 44px;
+	width: 1190px;
+	color: white;	
+	position: relative;
+	background: black;
+}
+.bar li:hover{
+	background-color:#a600fd;
+} 
+.barl{
+	width: 146px;
+    height: 34px;
+    line-height: 20px;
+    padding-top: 10px;
+    margin-left: 90px;
+    border-right: 1px solid #a600fd;
+    position: relative;
+}
+.barlisti{
+	background: url(../images/index.png) no-repeat 0px 0px;
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.barlist{
+	display: none;
+	position: absolute;
+    width: 166px;
+    top: 44px;
+    left: -20px;
+    height: 328px;
+    background: #000000;
+    z-index: 9;
+    color: white;
+    border-top:1px solid #a600fd;
+}
+.barlist .barlistul{
+	width: 166px;
+	height: auto;
+}
+.barlist .barlistul li{
+	    padding-left: 20px;
+    padding-top: 14px;
+    line-height: 14px;
+    width: 146px;
+    height: 26px;
+    border-top: 1px solid #a600fd;
+    position: relative;
+}
+.barlist .barlistul li:first-child{
+	border-top: none;
+}
+.barlist .barlistul li .barl1{
+	display: none;
+	    position: absolute;
+    width: 166px;
+    height: 164px;
+    background: #a600fd;
+    color: white;
+    z-index: 9;
+    /* text-align: center; */
+    left: 166px;
+    top: -1px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+
+
+.barr{
+	    width: 770px;
+    height: 44px;
+    float: right;
+    top: 0px;
+    right: 183px;
+    z-index: 10;
+    position: absolute;
+    /* padding-top: 10px; */
+}
+.barr ul{
+	    width: 770px;
+    height: 44px;
+}
+.barr ul li{
+	    padding-left: 20px;
+    padding-right: 17px;
+    float: left;
+    padding-top: 10px;
+    height: 34px;
+    position: relative;
+}
+.barr ul li:nth-child(2),.barr ul li:nth-child(3){
+	    width: 71px;
+}
+.barr ul li:nth-child(4){
+	    width: 148px;
+}
+.new{
+	position: absolute;
+	display: inline-block;
+	height: 14px;
+	width: 23px;
+	top:0px;
+	background: url(../images/tre.png) no-repeat -19px -70px;
+}
+.hotsale{
+	top:0px;
+	position: absolute;
+	display: inline-block;
+	height: 14px;
+	width: 23px;
+	background: url(../images/tre.png) no-repeat -19px -94px;
+}

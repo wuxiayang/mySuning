@@ -1,0 +1,114 @@
+.rightbar{
+    z-index: 10000;
+    position: relative;
+    float: right;
+    width: 35px;
+    height: 100%;
+    position: fixed;
+    /* left: 93%; */
+    right: 0;
+    top: 0px;
+    border: 1px solid #000;
+    /*opacity: .9;*/
+    
+}
+.rightbar .rightbarcover{
+	/*display: none;*/
+	position: absolute;
+	width: 35px;
+    height: 100%;
+    z-index: 10;
+    background: #3b3b3b;
+}
+.rightbar .mydiv{
+	height: 30px;
+	width:35px;
+	position: absolute;
+	z-index: 300;
+	background: #3b3b3b;
+}
+.rightbar .mydiv:hover{
+	background: #ffa500;
+}
+.rightbar .myspan{
+	display: inline-block;
+	 height: 30px;
+    width: 35px;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    z-index: 303;
+}
+/*background: url(../images/sidebaricon.png) no-repeat -px -px;*/
+.rightbar .myicon{
+	margin-top: 129px;
+}
+.rightbar .myicon span{
+    background: url(../images/sidebaricon.png) no-repeat 0px 0px;
+}
+.rightbar .myicon span:hover{
+    background: url(../images/sidebaricon.png) no-repeat -27px 0px;
+}
+.rightbar .mycart{
+	height: 117px;
+    margin-top: 173px;	
+}
+.rightbar .mycart span{
+	    /*height: 117px;*/
+	    background: url(../images/sidebaricon.png) no-repeat 0px -214px;
+}
+.rightbar .mycart p{
+    color: white;
+    height: 70px;
+    width: 10px;
+    margin-left: 10px;
+    /* text-align: center; */
+    margin-top: 34px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.rightbar .mymessage{
+    margin-top: 303px;
+}
+.rightbar .mymessage span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -24px;
+}
+.rightbar .mymessage span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -24px;
+}
+.rightbar .mymoney{
+	 margin-top: 341px;
+}
+.rightbar .mymoney span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -47px;
+}
+.rightbar .mymoney span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -47px;
+}
+.rightbar .mytime{
+	 margin-top: 381px;
+}
+.rightbar .mytime span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -71px;
+}
+.rightbar .mytime span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -71px;
+}
+.rightbar .mysign{
+	    margin-top: 418px;
+}
+.rightbar .mysign span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -94px;
+}
+.rightbar .mysign span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -94px;
+}
+.rightbar .mytop{
+	      margin-top: 451px;
+}
+.rightbar .mytop span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -189px;
+}
+.rightbar .mytop span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -189px;
+}
