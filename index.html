@@ -5,12 +5,16 @@
 		<meta charset="UTF-8">
 		<title>苏宁易购(Suning.com)</title>
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/cssreset.css" />
-		<link rel="stylesheet" href="css/icon-font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/cssreset.css"  id="link2"/>
+		<link rel="stylesheet" href="css/icon-font/iconfont.css"/>
 		<link rel="stylesheet" href="css/icon-font/demo.css" />
 		<link rel="stylesheet" href="css/index-style.css" />
 		<script src="js/js-code/jquery-3.2.1.js"></script>
 		<script src="js/index.js"></script>
+		<script>
+	    	var ooLink = document.getElementById('link2');
+	    	ooLink.href = 'css/cssreset.css';   //这样就把link的链接修改为'../../aaa.css'了。
+		</script>		
 	</head>
 
 	<body class="bodyclass">
@@ -3292,11 +3296,43 @@
 					</div>
 					<!--头条部分-->
 					<div class="hot-ad">
-
+                        <ul class="hotad-one">
+                        	<li>
+                        		<em>[活动]</em>
+                        		苏宁红孩子&新丝路少儿型秀大赛
+                        	</li>
+                        	<li>
+                        		<em>[热点]</em>
+                        		您有一份网络诚信公约待签，请查收
+                        	</li>
+                        	<li>
+                        		<em>[新品]</em>
+                        		首款屏幕指纹手机OPPO k1发行
+                        	</li>
+                        	<li>
+                        		<em>[热门]</em>
+                        		戴森又上新？这支卷发棒即将收割你的钱包！
+                        	</li>
+                        </ul>
+                        <ul>
+                        	<li>
+                        		<em>[活动]</em>
+                        		苏宁红孩子&新丝路少儿型秀大赛                        		
+                        	</li>
+                        	<li>
+                         		<em>[热点]</em>
+                        		您有一份网络诚信公约待签，请查收                       		
+                        	</li>
+                        </ul>
 					</div>
 					<!--便民服务部分-->
 					<div class="easy-life">
-						
+						<span class="iconfont">&#xe60b;</span>
+						<span class="iconfont">&#xe600;</span>
+						<span class="iconfont">&#xe609;</span>
+						<span class="iconfont">&#xe60f;</span>
+						<span class="iconfont">&#xe62e;</span>
+						<span class="iconfont">&#xe634;</span>
 					</div>
 				</div>
 				<!--手风琴广告部分-->
@@ -5808,18 +5844,31 @@
 	    	</div>
 	    	<div class="mymessage mydiv">
 	    		<span class="myspan"></span>
+	    		<p class="rispan">消息</p>	    		
 	    	</div>
 	    	<div class="mymoney mydiv">
 	    		<span class="myspan"></span>
+	    		<p class="rispan">理财</p>		    		
 	    	</div>
 	    	<div class="mytime mydiv">
 	    		<span class="myspan"></span>
+	    		<p class="rispan">足迹</p>		    		
 	    	</div>
 	    	<div class="mysign mydiv">
 	    		<span class="myspan"></span>
+	    		<p class="rispan">签到</p>		    		
 	    	</div>
+	    	<div class="mywrite mydiv">
+	    		<span class="myspan"></span>
+	    		<p class="rispan">账单</p>		    		
+	    	</div>
+	    	<div class="mysao mydiv">
+	    		<span class="myspan"></span>
+	    		<p class="rispan">消息</p>		    		
+	    	</div>	    	
 	    	<div class="mytop mydiv">
 	    		<span class="myspan"></span>
+	    		<p class="rispan">返回顶部</p>		    		
 	    	</div>
 	    </div>
 			
