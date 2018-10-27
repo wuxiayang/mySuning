@@ -1,11 +1,10 @@
 $(function() {
 	/* 全局变量部分*/
-	var timer;
-	var num = 0;
+//	判断返回首页的按键会不会出现
 	var sn = {
 			"names": false
 		}
-		/*一     页面加载还没有完毕，而js开始执行，会产生延时*/
+   /*一     页面加载还没有完毕，而js开始执行，会产生延时*/
 	setTimeout(function() {
 		$(window).scrollTop(0, 0);
 	}, 1);
@@ -63,73 +62,61 @@ $(function() {
 
 	/*2  横板导航条的下标图滑动*/
 	$('.cross-index ul li').hover(function() {
+		$(this).children('span').css('display', 'block');
 		$(this).children('span').css('margin-top', '-7px');
 		$(this).siblings().children('span').css('margin-top', '3px');
 	}, function() {
 		$(this).children('span').css('margin-top', '3px');
+		$(this).children('span').css('display', 'none');		
 	});
-
+//(function(){})();
 	/*3  轮播图部分*/
 	/*3.1  自动播放部分*/
-
-	function rollimg() {
+(function(){
+	   	var timer;
+	    var num = 0; 
+	    var colors=['#bee6ff','#70a3b8','#19053a','#ffb2bd','#654ee6','#000000','#d1075d','#feb005'];
+   		function rollimg() {
 		if(num == 0) {
-//			$('.banner-bgad').css('background', '#bee6ff');
-			$('.ll').css('background', '#bee6ff');
+			$('.ll').css('background', colors[0]);
 		}
+//		var colors=['#bee6ff','#70a3b8','#19053a','#ffb2bd','#654ee6','#000000','#d1075d','#feb005'];
 		timer = setInterval(function() {
+			$('.roll-img ul').css('left', '0px')
 			num = num + 1;
 			//改变背景颜色
-			if(num == 0) {
-				$('.ll').css('background', '#bee6ff');
-			} else
-			if(num == 1) {
-				$('.ll').css('background', '#70a3b8');
-			} else if(num == 2) {
-				$('.ll').css('background', '#19053a');
-			} else if(num == 3) {
-				$('.ll').css('background', '#ffb2bd');
-			} else if(num == 4) {
-				$('.ll').css('background', '#654ee6');
-			} else if(num == 5) {
-				$('.ll').css('background', '#000000');
-			} else if(num == 6) {
-				$('.ll').css('background', '#d1075d');
-			} else if(num == 7) {
-				$('.ll').css('background', '#feb005');
-			} else if(num == 8) {
-				$('.ll').css('background', '#bee6ff');
-			}
+				$('.ll').css('background', colors[num]);
 			//循环控制部分
 			var a = 0;
 			if(num == 8) {
 				a = 0;
 				$('.roll-point ol li').eq(a).addClass('current').siblings().removeClass('current');
+				$('.ll').css('background', colors[0]);
 			}
 			if(num > 8) {
-				num = 0;
-				$('.roll-img ul').css('left', -830 * num + 'px');
-				$('.ll').css('background', '#bee6ff');
+//				num = 0;
+				$('.roll-img ul li').eq(num).fadeIn().siblings('').fadeOut();		
 				num = 1;
-				$('.ll').css('background', '#70a3b8');
+				$('.ll').css('background', colors[1]);
 			}
-
-			$('.roll-img ul').animate({
-				'left': -830 * num + 'px'
-			}, 500);
+			$('.roll-img ul li').eq(num).fadeIn().siblings('').fadeOut();
 			$('.roll-point ol li').eq(num).addClass('current').siblings().removeClass('current');
-
 		}, 2000);
 	}
+	
 	rollimg();
-	//3.2 左右箭头图标的控制
+//	3.2 左右箭头图标的控制
 	$('.roll-img').hover(function() {
 		clearInterval(timer);
+		$('.roll-img ul li').fadeIn(0);
+		$('.banner-bgad').css('background', colors[num]);
 		$(".left-roll").css('display', 'block');
 		$(".right-roll").css('display', 'block');
 
 	}, function() {
+		
 		rollimg();
+		$('.banner-bgad').css('background', colors[num]);
 		$(".left-roll").css('display', 'none');
 		$(".right-roll").css('display', 'none');
 	})
@@ -137,80 +124,75 @@ $(function() {
 	//3.3向左滑动
 	//3.4向右滑动
 	$('.left-roll').click(function(event) {
-		clearInterval(timer);
 		num = num - 1;
 		console.log(num);
 		//改变背景颜色
-		if(num == 0) {
-			$('.banner-bgad').css('background', '#bee6ff');
-		} else if(num == 1) {
-			$('.banner-bgad').css('background', '#70a3b8');
-		} else if(num == 2) {
-			$('.banner-bgad').css('background', '#19053a');
-		} else if(num == 3) {
-			$('.banner-bgad').css('background', '#bebebe');
-		} else if(num == 4) {
-			$('.banner-bgad').css('background', '#654ee6');
-		} else if(num == 5) {
-			$('.banner-bgad').css('background', '#000000');
-		} else if(num == 6) {
-			$('.banner-bgad').css('background', '#d1075d');
-		} else if(num == 7) {
-			$('.banner-bgad').css('background', '#feb005');
-		} else if(num == 8) {
-			$('.banner-bgad').css('background', '#bee6ff');
-		}
+		$('.ll').css('background', colors[num]);
 		if(num < 0) {
 			num = 8;
 			$('.roll-img ul').css('left', -830 * num + 'px');
-			num = 7;
-			$('.banner-bgad').css('background', '#feb005');
+			$('.banner-bgad').css('background', colors[0]);
+//			num = 7;
+//			$('.banner-bgad').css('background', colors[7]);
 		}
 		$('.roll-img ul').animate({
 			'left': -830 * num + 'px'
 		})
+		
 		$('.roll-point ol li').eq(num).addClass('current').siblings('').removeClass('current');
 
 	});
-	$('.right-roll').click(function(event) {
-		clearInterval(timer);
+
+
+	$('.right-roll').click(function(event) {	
 		num = num + 1;
 		//改变背景颜色
-		if(num == 0) {
-			$('.banner-bgad').css('background', '#bee6ff');
-		} else if(num == 1) {
-			$('.banner-bgad').css('background', '#70a3b8');
-		} else if(num == 2) {
-			$('.banner-bgad').css('background', '#19053a');
-		} else if(num == 3) {
-			$('.banner-bgad').css('background', '#bebebe');
-		} else if(num == 4) {
-			$('.banner-bgad').css('background', '#654ee6');
-		} else if(num == 5) {
-			$('.banner-bgad').css('background', '#000000');
-		} else if(num == 6) {
-			$('.banner-bgad').css('background', '#d1075d');
-		} else if(num == 7) {
-			$('.banner-bgad').css('background', '#feb005');
-		} else if(num == 8) {
-			$('.banner-bgad').css('background', '#bee6ff');
-		}
+		$('.ll').css('background', colors[num]);
 		if(num == 8) {
-			n = 0;
-			$('.roll-point ol li').eq(n).addClass('current').siblings('').removeClass('current');
+			$('.banner-bgad').css('background', colors[0]);
+			num =0;
+			$('.banner-bgad').css('background', colors[0]);
+			$('.roll-point ol li').eq(num).addClass('current').siblings('').removeClass('current');
+//			$('.banner-bgad').css('background', colors[0]);
+			
 		}
 		if(num > 8) {
+			$('.banner-bgad').css('background', colors[0]);
 			num = 0;
 			$('.roll-img ul').css('left', -830 * num + 'px');
-			num = 1;
+			$('.banner-bgad').css('background', colors[0]);
+//			num = 1;
+//			$('.banner-bgad').css('background', colors[0]);
 		}
 		$('.roll-point ol li').eq(num).addClass('current').siblings('').removeClass('current');
 		$('.roll-img ul').animate({
 			'left': -830 * num + 'px'
 		})
 	});
-	/* 4   用户栏的热点轮播*/
+})();
 
+	
+//	console.log('12');
+(function(){
+		/* 4   用户栏的热点轮播*/
+				var num=0;
+             	var timer;
+             function gogo(){
+             	console.log(num);
+             	setInterval(function(){
+             		num=num+1;
+             		if(num>2){
+             			num=0;
+             			$('.hotad-one').css('margin-top',-102*num+'px');
+             			num=1;
+             		}
+             		$('.hotad-one').animate({'margin-top':-102*num+'px'},300);
+               	console.log('1');
+             	},3500)
+             }
+
+             gogo();
+})()
 	/*5 下部手风琴的滑动效果*/
 	/*当手风琴出现时,删除整个clean div,改变li的宽度,控制白色小块的出现*/
 	$('.accordion-img').hover(function() {
@@ -371,5 +353,13 @@ $('.leftbartop').click(function(event){
 $('.rightbar .mytop').click(function(event){
 	$('html,body').animate({'scrollTop':'0px'},1000);
 })
+$('.mydiv').hover(function(event){
+	$(this).children('.rispan').animate({'right':'70px'},2000);
+},function(event){
+	$(this).children('.rispan').animate({'right':'-28px'},1000);	
+});
+
+
+
 	/*整体的括号*/
 })
