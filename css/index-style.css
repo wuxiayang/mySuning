@@ -955,34 +955,34 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	    top: -99px;
 }  
 .banner-ul li:nth-child(5) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -132px;
    }
    .banner-ul li:nth-child(6) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -163px;
    }
    .banner-ul li:nth-child(7) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -194px;
    }
    .banner-ul li:nth-child(8) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -225px;
    }
    .banner-ul li:nth-child(9) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -256px;
    }
    .banner-ul li:nth-child(10) .banner-bodylist:nth-child(2)   {
-   	    top: -250px;
+   	    top: -287px;
    }
    .banner-ul li:nth-child(11) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -318px;
    }
 .banner-ul li:nth-child(12) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -349px;
    } 
  .banner-ul li:nth-child(13) .banner-bodylist:nth-child(2)   {
-   	    top: -105px;
+   	    top: -380px;
    }  
   .banner-ul li:nth-child(14) .banner-bodylist:nth-child(2)   {
-   	    top: -343px;
+   	    top: -406px;
    }  
 .current {
 	background: #FFFFFF;
@@ -1043,62 +1043,22 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	display: none;
 }
 
-.bodylist1 {
+.bodylist1,
+.bodylist2,
+.bodylist3,
+.bodylist4,
+.bodylist5,
+.bodylist6,
+.bodylist7,
+.bodylist8,
+.bodylist9,
+.bodylist10,
+.bodylist11,
+.bodylist12,
+.bodylist13,
+.bodylist14{
 	top: 0px;
 }
-
-.bodylist2 {
-	top: 0px;
-}
-
-.bodylist3 {
-	top: 0px;
-}
-
-.bodylist4 {
-	top: 0px;
-}
-
-.bodylist5 {
-	top: 0px;
-}
-
-.bodylist6 {
-	top: 0px;
-}
-
-.bodylist7 {
-	top: 0px;
-}
-
-.bodylist8 {
-	top: 0px;
-}
-
-.bodylist9 {
-	top: 0px;
-}
-
-.bodylist10 {
-	top: 0px;
-}
-
-.bodylist11 {
-	top: 0px;
-}
-
-.bodylist12 {
-	top: 0px;
-}
-
-.bodylist13 {
-	top: 0px;
-}
-
-.bodylist14 {
-	top: 0px;
-}
-
 
 /*左滑列表的内部样式------------------------*/
 
@@ -1268,6 +1228,7 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	/* padding-left: 5px; */
 	margin-left: 12px;
 	transition: all .5s;
+	display: none;
 }
 
 .cross-index ul li span.ycloud1 {
@@ -1292,6 +1253,7 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 
 .banner-bgad {
 	/*z-index: 400;*/
+	z-index: 400;
 	top: 38px;
 	/*position: relative;*/
 	position: absolute;
@@ -1474,7 +1436,7 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	margin: 0px auto;
 	position: absolute;
 	padding-bottom: 20px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #F2F2F2;
 }
 
 .user .welfare a {
@@ -1526,11 +1488,54 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	width: 16px;
 	margin-right: 61px;
 }
-.easy-life{
-	height: ;
-	width: ;
+.hot-ad{
+	top: 163px;
+	/*border: 1px solid;*/
+	margin-left: 13px;
+	width: 145px;
+	height:90px;
+	overflow: hidden;
+	position: relative;
 }
-
+.hot-ad .hotad-one{
+   /*position: relative;*/
+	margin-top: 0px;
+	width: 145px;
+}
+.hot-ad li{
+	height:36px;
+	width: 145px;
+	margin-bottom: 15px;
+}
+.hot-ad li em{
+	color: #ff9e00;
+}
+.easy-life{
+    margin-top: 184px;
+    height: 146px;
+    border-top: 1px solid #f2f2f2;
+    padding-left: 13px;
+    padding-right: 7px;
+    width: 150px;
+}
+.easy-life span{
+    display: inline-block;
+    height: 73px;
+    width: 46px;
+    /* padding-left: 4px; */
+    font-size: 40px;
+    color: #ff9200;
+    border-right: 1px solid #f2f2f2;
+}
+.easy-life span:nth-child(1),
+.easy-life span:nth-child(2),
+.easy-life span:nth-child(3){
+	border-bottom: 1px solid #F2F2F2;
+}
+.easy-life span:nth-child(3),
+.easy-life span:nth-child(6){
+	border-right: none;
+}
 /*手风琴效果*/
 
 .bodyclass .accordion-img {
@@ -2026,9 +2031,7 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 .countgoods .goodstop a {
 	float: right;
 	display: inline-block;
-	/*height: 46px;*/
 	width: 100px;
-	/*border: 1px solid #000;*/
 	position: relative;
 	height: 16px;
 	line-height: 16px;
@@ -2059,19 +2062,12 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 .banner-buttomad .goodstab {
 	height: 260px;
 	width: 1000px;
-	/*overflow: hidden;*/
-	/*border: 1px solid yellow;*/
 }
 
 .bodyclass .goodstab .goodsbox {
 	width: 800px;
 }
 
-
-/*.goodstab*/
-
-
-/*.goodsbox*/
 
 .goodstab .goodsbox {
 	/*border: 1px solid lime;*/
@@ -2090,11 +2086,8 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	height: 240px;
 	width: 800px;
 	margin-top: 10px;
-	/*border: 1px solid #000;*/
 }
 
-
-/*.goodstab*/
 
 .goodstab .goodsbox .goodsboxcon ul {
 	left: 0px;
@@ -2103,9 +2096,6 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	height: 240px;
 	width: 1600px;
 }
-
-
-/*.goodstab*/
 
 .goodstab .goodsbox .goodsboxcon ul li {
 	/*border: 1px solid lime;*/
@@ -2116,16 +2106,6 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 }
 
 
-/*.goodstab*/
-
-
-/*.goodstab  .goodsbox .goodsboxcon ul li:nth-child(4n){
-	border-right: none;
-}*/
-
-
-/*.goodstab*/
-
 .goodstab .goodsbox .goodsboxcon ul li img {
 	width: 150px;
 	height: 150px;
@@ -2133,9 +2113,6 @@ nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
 	/*border: 1px solid;*/
 	display: inline-block;
 }
-
-
-/*.goodstab*/
 
 .goodstab .goodsbox .goodsboxcon ul li p.goodstitle {
 	overflow: hidden;
@@ -4133,7 +4110,7 @@ footer {
     /* left: 93%; */
     right: 0;
     top: 0px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     /*opacity: .9;*/
     
 }
@@ -4147,7 +4124,7 @@ footer {
 }
 .rightbar .mydiv{
 	height: 30px;
-	width:35px;
+	width:70px;
 	position: absolute;
 	z-index: 300;
 	background: #3b3b3b;
@@ -4161,8 +4138,21 @@ footer {
     width: 35px;
     position: absolute;
     top: 3%;
-    right: 0px;
+    /*right: 0px;*/
     z-index: 303;
+}
+.rightbar .rispan{
+    height: 30px;
+    top: 0px;
+    background:#ffa500;
+    width: 63px;
+    line-height: 30px;
+    text-align: center;
+    /*display: inline-block;*/
+    position: absolute;
+    /*right: 70px;*/	
+    right:-28px;
+    z-index: 300;
 }
 /*background: url(../images/sidebaricon.png) no-repeat -px -px;*/
 .rightbar .myicon{
@@ -4228,8 +4218,26 @@ footer {
 .rightbar .mysign span:hover{
 	background: url(../images/sidebaricon.png) no-repeat -27px -94px;
 }
+.rightbar .mysao{
+	    margin-top: 511px;
+}
+.rightbar .mysao span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -164px;
+}
+.rightbar .mysao span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -164px;
+}
+.rightbar .mywrite{
+	    margin-top: 548px;
+}
+.rightbar .mywrite span{
+	background: url(../images/sidebaricon.png) no-repeat 0px -139px;
+}
+.rightbar .mywrite span:hover{
+	background: url(../images/sidebaricon.png) no-repeat -27px -139px;
+}
 .rightbar .mytop{
-	      margin-top: 451px;
+	      margin-top: 585px;
 }
 .rightbar .mytop span{
 	background: url(../images/sidebaricon.png) no-repeat 0px -189px;
